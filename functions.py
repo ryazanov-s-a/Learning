@@ -21,3 +21,13 @@ def sum_in_string(x):
         except ValueError:
             continue
     print(s)
+
+
+def args_sum(*args):
+    """
+    Функция суммирования произвольного кол-ва аргументов
+    """
+    s = 0
+    for i in args:
+        s += i
+    return s
