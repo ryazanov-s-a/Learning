@@ -31,3 +31,15 @@ def args_sum(*args):
     for i in args:
         s += i
     return s
+
+
+def cort_in_massive(x):
+    """
+    Функция выводящая массив из кортежей где индекс начинается с 1
+    """
+    mass = []
+    for i in x:
+        z = (x.index(i) + 1, i)
+        mass.append(z)
+    print(mass)
+    return cort_in_massive
